@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script Project Password Generator</title>
+    <link rel="shortcut icon" href="#">
+</head>
+<body>
+<div class="container">
+    <h1>Password Generator</h1>
+    <div class="content-display">
+      <input readonly placeholder="Password" data-passwordDisplay>
+      <button data-copy>
+        <span data-copyMsg></span>
+        <img src="./img/copy.png" alt="" width="23px" height="23px">
+      </button>
+    </div>
+    <div class="input-container">
+        <div class="length-conatiner">
+            <p>Password Length</p>
+            <span data-lengthNumber>0</span>
+        </div>
+        <input type="range" max="20" min="1" step="1" data-lengthSlider >
+        <div>
+            <input type="checkbox" id="uppercase">
+            <label for="uppercase">Include Uppercase Latter</label>
+        </div>
+        <div>
+            <input type="checkbox" id="lowercase">
+            <label for="lowercase">Include Lowercase Latter</label>
+        </div>
+        <div>
+            <input type="checkbox" id="number">
+            <label for="number">Include Number</label>
+        </div>
+        <div>
+            <input type="checkbox" id="symbol">
+            <label for="symbol">Include Symbol</label>
+        </div>
+        <div class="strength-container">
+            <p>Strength</p>
+            <div data-indicator></div>
+
+        </div>
+        <button class="genarate-btn">Genarate Password</button>
+    </div>
+</div>  
+<script src="/script.js"></script>
+</body>
+</html>
